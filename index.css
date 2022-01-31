@@ -788,3 +788,25 @@ footer a {
     padding-left: 20px;
     font-size: 13px;
 }
+
+
+/* phần feedback */
+
+.feedback {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    width: 20px;
+    padding-right: 25px;
+    transform: rotate(-90deg);
+}
+
+.feedback button {
+    padding: 16px 25px 16px 25px;
+    box-sizing: border-box;
+    border: 0px;
+    background-color: #ebebeb;
+    font-weight: 900;
+    font-size: 17px;
+    color: #828483;
+}
