@@ -1,0 +1,790 @@
+/* Đây là phần css cơ bản */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+p,
+a,
+h1,
+h2,
+h3,
+li {
+    font-family: 'tamoha';
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    font-weight: 550;
+}
+
+h2 {
+    text-shadow: 1px 1px rgba(1, 1, 1, 0.5);
+}
+
+@font-face {
+    src: url(./font/Nike-Font/Nike-Font/Futura\ Condensed\ Extra\ Bold.otf);
+    font-family: 'NikeFont';
+    src: url(./font/tamoha_font/Tahoma\ Regular\ font.ttf);
+    font-family: "tamoha";
+}
+
+
+/* Kết thúc phần css cơ bản */
+
+
+/* Đây là phần css cho Landing */
+
+.landing {
+    background-color: #f6f6f6;
+}
+
+header {
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+}
+
+.landing .header {
+    height: 60px;
+    display: flex;
+    background-color: white;
+    position: relative;
+    opacity: 80%;
+}
+
+.landing .header-left img {
+    width: 50px;
+    padding-left: 4vw;
+    padding-top: 4px;
+}
+
+.landing .header-right {
+    position: absolute;
+    right: 4vw;
+}
+
+.landing .header-right a {
+    font-weight: 500;
+}
+
+.landing .header-right ul {
+    float: right;
+}
+
+.landing .header-right li {
+    float: left;
+    padding-left: 3vw;
+    padding-top: 19px;
+}
+
+.landing-item1 {
+    display: flex;
+}
+
+.landing-item1 img {
+    width: 40vw;
+}
+
+.landing-item1-infor {
+    padding-top: 12%;
+    padding-left: 8vw;
+    padding-bottom: 12%;
+}
+
+.title h2 {
+    font-weight: bold;
+    font-size: 30px;
+    text-shadow: 1.5px 1.5px rgba(1, 1, 1, 0.5);
+}
+
+
+/* new và old là giá sau giảm và giá trước giảm của tất cả sản phẩm  */
+
+
+/* price là phần giá chung */
+
+.price {
+    padding-top: 15px;
+    display: flex;
+}
+
+.new p {
+    width: ;
+    color: #e56d5a;
+    padding-bottom: 20px;
+    font-size: 22px;
+    text-shadow: 1px 1px rgba(1, 1, 1, 0.5);
+}
+
+.old p {
+    font-size: 15px;
+    padding-top: 4px;
+    padding-left: 15px;
+    color: rgb(161, 161, 161);
+    text-decoration: line-through black;
+    text-shadow: 0.5px 0.5px rgba(1, 1, 1, 0.5);
+}
+
+.border {
+    width: 50px;
+    border-bottom: solid 2px rgb(161, 161, 161);
+    opacity: 50%;
+}
+
+.description {
+    padding-top: 20px;
+    width: 35vw;
+}
+
+.description p {
+    font-weight: 400;
+    color: rgb(129, 128, 128);
+}
+
+.title .button {
+    display: flex;
+}
+
+
+/* Button buy */
+
+.title .button-buy {
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+.title .button-buy button {
+    cursor: pointer;
+    border: 0px #e56d5a solid;
+    background-color: #e56d5a;
+    width: 160px;
+    height: 45px;
+    box-shadow: 3px 3px #e56d5a93;
+}
+
+.title .button-buy button:hover {
+    background-color: #d87363;
+    box-shadow: 0px 0px;
+    transition: 0.8s;
+}
+
+.title .button-buy a {
+    color: white;
+    font-weight: bold;
+}
+
+
+/* Button descriotion */
+
+.title .button-descriotion {
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+.title .button-descriotion button {
+    cursor: pointer;
+    border: 0px #e56d5a solid;
+    background-color: #313131;
+    width: 160px;
+    height: 45px;
+    box-shadow: 3px 3px rgba(1, 1, 1, 0.5);
+}
+
+.title .button-descriotion button:hover {
+    background-color: #000000;
+    box-shadow: 0px 0px;
+    transition: 0.8s;
+}
+
+.title .button-descriotion a {
+    color: white;
+    font-weight: bold;
+}
+
+
+/* landing 2 */
+
+.landing-item2 {
+    padding-top: 0px;
+}
+
+.landing-item2 .title {
+    display: flex;
+}
+
+.landing-item2 .title h2 {
+    font-size: 27px;
+    padding-bottom: 22px;
+    padding-top: 100px;
+}
+
+.landing-item2-title {
+    background-color: white;
+    padding-left: 100px;
+    padding-bottom: 200px;
+    width: 57vw;
+}
+
+.landing-item2-img {
+    position: relative;
+    z-index: 0;
+    width: calc(100vw - 57vw);
+}
+
+.landing-item2-img img {
+    width: 30vw;
+    position: absolute;
+    right: 0;
+    top: 20px;
+}
+
+
+/* landing 3 */
+
+.landing-item3 {
+    padding-top: 0px;
+    height: auto;
+}
+
+.landing-item3 .title {
+    display: flex;
+}
+
+.landing-item3 .title h2 {
+    font-size: 27px;
+    padding-bottom: 22px;
+    padding-top: 100px;
+}
+
+.landing-item3-title {
+    background-color: #f6f6f6;
+    padding-left: 100px;
+    padding-bottom: 200px;
+    width: 57vw;
+}
+
+.landing-item3-img {
+    position: relative;
+    z-index: 0;
+    width: calc(100vw - 57vw);
+    background-color: #fff;
+    height: 700px;
+}
+
+.landing-item3-img img {
+    width: 30vw;
+    position: absolute;
+    right: 0;
+    top: 20px;
+}
+
+
+/* Kết thúc phần Landing */
+
+
+/* Phần Sản Phẩm - Sản phẩm nổi bậc */
+
+.hot-product-title h2 {
+    margin-top: 40px;
+    padding-left: 40px;
+    font-weight: 600;
+}
+
+.hot-product {
+    display: flex;
+    background-color: white;
+    overflow: auto;
+}
+
+.hot-product .product-img img {
+    cursor: pointer;
+}
+
+
+/* Chỉnh sửa phần thanh trượt */
+
+.hot-product::after,
+.hot-product::before {
+    box-sizing: inherit;
+}
+
+.hot-product::-webkit-scrollbar {
+    width: 14px;
+}
+
+.hot-product::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+    display: none;
+}
+
+.hot-product::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+
+.hot-product::-webkit-scrollbar-track {
+    margin: 0 var(--carousel-padding);
+}
+
+.hot-product::-webkit-scrollbar-thumb {
+    background-clip: content-box;
+    border: solid transparent;
+    border-width: 4px 0;
+    border-radius: 7px;
+    box-shadow: inset 0 0 0 10px;
+    border-top-color: transparent;
+    border-top-style: solid;
+    border-top-width: 4px;
+    border-right-color: transparent;
+    border-right-style: solid;
+    border-right-width: 0px;
+    border-bottom-color: transparent;
+    border-bottom-style: solid;
+    border-bottom-width: 4px;
+    border-left-color: transparent;
+    border-left-style: solid;
+    border-left-width: 0px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+}
+
+
+/* Kết thúc phần thanh trượt */
+
+.product {
+    padding-left: 40px;
+    padding-bottom: 30px;
+}
+
+.product-infor {
+    display: flex;
+    position: relative;
+    width: 452px;
+}
+
+.product-title a {}
+
+.product-description a {
+    font-weight: 400;
+    opacity: 50%;
+}
+
+.product-price a {
+    font-weight: 500;
+}
+
+.product-price {
+    position: absolute;
+    right: 0;
+}
+
+.product-img img {
+    padding-bottom: 20px;
+    padding-top: 30px;
+    width: 452px;
+}
+
+
+/* Kết thúc chỉnh sửa phần sản phẩm */
+
+
+/* Mở đầu phần chỉnh chỉnh sửa phong cách thịnh hành */
+
+.trending-styles-title h2 {
+    margin-top: 40px;
+    padding-left: 40px;
+    font-weight: 600;
+}
+
+.trending-styles-item {
+    display: flex;
+    padding-top: 20px;
+}
+
+.trending-styles-item-banner1 {
+    margin-left: 40px;
+    margin-right: 10px;
+    padding-left: 3vw;
+    padding-top: 40vw;
+    background-image: url(./img/trending\ banner4\ 11.jpg);
+    width: 52vw;
+    height: calc(52vw - 40vw);
+    background-size: 52vw 52vw;
+    background-repeat: no-repeat;
+}
+
+.trending-styles-item-banner1 a {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.trending-styles-item-banner2 a {
+    font-size: 26px;
+    font-weight: 600;
+    color: white;
+}
+
+.hot-product-button-buy a {
+    color: white;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.hot-product-button-buy button:hover,
+.trending-styles-item-banner2 .hot-product-button-buy button:hover {
+    background-color: gray;
+    transition: 0.5s;
+}
+
+.trending-styles-item-banner2 .hot-product-button-buy a {
+    color: black;
+}
+
+.trending-styles-item-banner2 .hot-product-button-buy button {
+    background-color: white;
+}
+
+.hot-product-button-buy button {
+    padding: 4.5px 18.5px;
+    border-radius: 30px;
+    border: 1.5px solid transparent;
+    -webkit-box-pack: center;
+    margin-top: 2vw;
+    background-color: black;
+}
+
+.trending-styles-item-banner2 {
+    background-image: url(./img/trending\ banner5\ 11.jpg);
+    width: 52vw;
+    height: calc(52vw - 40vw);
+    padding-bottom: auto;
+    padding-left: 3vw;
+    background-repeat: no-repeat;
+    background-size: 52vw 52vw;
+    margin-right: 40px;
+    padding-top: 40vw;
+}
+
+
+/* Kết thúc phần phong cách thịnh hành */
+
+
+/* Mở đầu phần lợi ích thành viên */
+
+.vip-member h2 {
+    color: black;
+    margin-top: 40px;
+    padding-left: 40px;
+    font-weight: 600;
+}
+
+.vip-member-item {
+    background-color: #e5e5e5;
+    padding-bottom: 100px;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+.vip-member-logo {
+    text-align: center;
+}
+
+.vip-member-logo img {
+    width: 90px;
+    padding-top: 30px;
+}
+
+.vip-member-title h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 57px;
+    text-align: center;
+}
+
+.vip-member-description {
+    width: 70%;
+    padding-left: 15%;
+    padding-top: 17px;
+}
+
+.vip-member-description p {
+    text-align: center;
+    line-height: 1.7;
+}
+
+.vip-member-button {
+    display: flex;
+    width: 20vw;
+    align-items: center;
+    margin-left: calc(50% - 9vw - 4px);
+}
+
+.vip-member-button button {
+    background-color: black;
+    padding: 4.5px 18.5px;
+    border-radius: 30px;
+    border: 1.5px solid transparent;
+    -webkit-box-pack: center;
+    margin-top: 2vw;
+    background-color: black;
+}
+
+.vip-member-button-join-us {
+    width: 9vw;
+}
+
+.vip-member-button-join-us button:hover,
+.vip-member-button-login button:hover {
+    background-color: gray;
+    transition: 0.5s;
+}
+
+.vip-member-button-login {
+    width: 9vw;
+}
+
+.vip-member-button-join-us p {
+    padding-right: 2px;
+    padding-left: 2px;
+}
+
+.vip-member-button button p {
+    color: white;
+    padding-top: 2px;
+    padding-bottom: 4px;
+    font-size: 14px;
+}
+
+
+/* Lợi ích thành viên ( item child ) */
+
+.vip-member-item-child {
+    display: flex;
+    width: calc(100% - 80px);
+}
+
+.vip-member-item-child-1 img,
+.vip-member-item-child-2 img,
+.vip-member-item-child-3 img {
+    width: calc((100vw - 80px) / 3 - 20px);
+}
+
+.vip-member-item-child-1,
+.vip-member-item-child-2 {
+    padding-right: 22px;
+}
+
+.vip-member-item-child {
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-top: 50px;
+}
+
+.vip-member-item-child img {
+    cursor: pointer;
+}
+
+.vip-member-item-child a {
+    font-size: 20px;
+}
+
+.vip-member-item-child-1-title,
+.vip-member-item-child-2-title,
+.vip-member-item-child-3-title {
+    padding-top: 20px;
+}
+
+
+/* kết thúc vip member*/
+
+
+/* Phần các phong cách thời trang  */
+
+.more-styles h2 {
+    color: black;
+    margin-top: 40px;
+    padding-left: 40px;
+    font-weight: 600;
+}
+
+.more-styles-item {
+    display: flex;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.men-styles img {
+    width: calc((100vw - 80px) / 3 - 15px);
+    height: 560px;
+    padding-right: 15px;
+}
+
+.kid-styles img {
+    width: calc((100vw - 80px) / 3 - 15px);
+    height: 560px;
+    padding-right: 15px;
+}
+
+.woman-styles img {
+    height: 560px;
+    width: calc((100vw - 80px) / 3 - 20px);
+}
+
+.men-styles a,
+.kid-styles a,
+.woman-styles a {
+    padding-top: 20px;
+    display: block;
+    font-size: 20px;
+}
+
+
+/* Kết thúc phong cách thời trang */
+
+
+/* Phần recommend */
+
+.recommend {
+    padding-left: 20vw;
+    padding-top: 60px;
+    display: flex;
+}
+
+.recommend .title a {
+    font-weight: 500;
+    font-size: 17px;
+    color: black;
+}
+
+.recommend .title {
+    padding-bottom: 15px;
+}
+
+.featured-item,
+.shoes-item,
+.clothing-item,
+.kid-item {
+    margin-right: calc(10vw);
+}
+
+.featured-item a,
+.shoes-item a,
+.clothing-item a,
+.kid-item a {
+    display: block;
+    line-height: 0.7;
+    font-size: 16px;
+    opacity: 40%;
+}
+
+.off-hover-to-on {
+    display: none;
+    transition: 2s;
+}
+
+.recommend:hover .off-hover-to-on {
+    display: block;
+    transition: 1s;
+}
+
+
+/* Kết thúc recommend */
+
+
+/*  Phần footer */
+
+footer {
+    background-color: black;
+    padding-left: 40px;
+    padding-top: 40px;
+    margin-top: 10px;
+}
+
+footer a {
+    color: white;
+    display: block;
+    font-weight: 200;
+    opacity: 60%;
+    font-size: 14px;
+    line-height: 2.3;
+}
+
+.footer-left {
+    display: flex;
+}
+
+.item-bold a {
+    font-weight: 700;
+    opacity: 100%;
+    font-size: 16px;
+    line-height: 2;
+}
+
+.footer-item,
+.footer-help,
+.footer-about {
+    margin-right: 10vw;
+}
+
+.footer {
+    padding-bottom: 70px;
+    position: relative;
+}
+
+.footer-description {
+    display: flex;
+}
+
+.footer-description a {
+    margin-bottom: 20px;
+}
+
+.gg-copyright {
+    color: white;
+    margin-left: 20px;
+    margin-right: 4px;
+}
+
+.footer-right {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-right: 60px;
+}
+
+.footer-right li {
+    padding-left: 80px;
+}
+
+.footer-right i {}
+
+.footer-description-left {
+    display: flex;
+}
+
+.footer-description-left a {
+    font-size: 13px;
+}
+
+.footer-description-right {
+    display: flex;
+    padding-right: 60px;
+    position: absolute;
+    right: 0;
+}
+
+.footer-description-right a {
+    padding-left: 20px;
+    font-size: 13px;
+}
