@@ -9,102 +9,432 @@
     <title>Songpithong</title>
     <!-- css-->
     <link rel="stylesheet" href="./index.css">
+    <!-- javascrip -->
+    <script src="./index.js"></script>
     <!-- icons-->
-    <link href="https://css.gg/css?=|abstract|check-o|chevron-up|copyright|phone|push-chevron-down|search|shopping-cart|user" rel="stylesheet">
+    <link href="https://css.gg/css?=|abstract|check-o|chevron-up|copyright|phone|push-chevron-down|search|shopping-bag|shopping-cart|user" rel="stylesheet">
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
     <!-- font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/449e237ca1.js" crossorigin="anonymous"></script>
+
+    <!-- Thư viện -->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/headroom/0.7.0/jQuery.headroom.min.js"></script>
 </head>
 
 <body>
     <!-- Landing của web này được chia làm 3 phần mỗi phần tương ứng với mỗi sản phẩm nổi bậc -->
     <div class="landing">
+        <div class="header-child-top nav-dowm menu">
+            <div class="header-child-left">
+                <input type="search " class="input-search"><i class="gg-search"></i>
+            </div>
+            <div class="header-child-right">
+                <div class="header-child-help">
+                    <a href="">Help</a>
+                    <div class="header-child-help-child">
+                        <a href="" class="help-bold">Help</a><br>
+                        <a href="">Oder Status</a><br>
+                        <a href="">Shipping & Delivery</a><br>
+                        <a href="">Returns</a><br>
+                        <a href="">Size Charts</a><br>
+                        <a href="">Contact Us</a><br>
+                        <a href="">Privacy Policy</a><br>
+                        <a href="">Terms of Sale</a><br>
+                        <a href="">Terms of Use</a><br>
+                        <a href="">Send Us Feedback</a><br>
+                    </div>
+                </div>
+                <div class="border-right"></div>
+                <div class="header-child-join-us"><a href="">Join us</a></div>
+                <div class="border-right"></div>
+                <div class="header-child-sign-in"><a href="">Sign in</a></div>
+
+            </div>
+        </div>
         <header>
-            <div class="header">
+            <div class="header nav-dowm menu">
                 <div class="header-left">
                     <img src="./img/S.png">
                 </div>
-                <div class="header-right">
+                <div class="header-mid">
                     <ul>
-                        <li><a href="">TRANG CHỦ</a></li>
-                        <li><a href="">SẢN PHẨM</a></li>
-                        <li><a href="">BÀI VIẾT</a></li>
-                        <li><a href="">GIỚI THIỆU</a></li>
-                        <li><a href="">DỊCH VỤ</a></li>
-                        <li><a href="">ĐÁNH GIÁ</a></li>
-                        <li><a href="">MUA NHANH</a></li>
+                        <li class="product">
+                            <div class="product">
+                                <a href="" class="product border-bottom">Sản Phẩm </a>
+                                <div class="header-child-bottom">
+                                    <div class="header-child-bottom-product  display-none mot">
+                                        <div class="header-child">
+                                            <div class="product-item">
+                                                <a href="" class="header-child-title">Sản phẩm mới & nổi bậc</a><br>
+                                                <a href="">Tất cả hàng mới</a><br>
+                                                <a href="">Dòng Air Max tốt nhất</a><br>
+                                                <a href="">Sản phẩm ưu đãi cho thành viên vip</a><br>
+                                                <a href="">Bộ sưu tập Lunar New Year</a><br>
+                                                <a href="">Bộ sưa tập Galentine's Collection</a><br>
+                                                <a href="">Giảm giá 40%</a><br>
+                                            </div>
+                                            <div class="product-item">
+                                                <a href="" class="header-child-title">Dành cho Nam</a><br>
+                                                <a href="">Giày</a><br>
+                                                <a href="">Quần áo</a><br>
+                                                <a href="">Tất cả sản phẩm</a><br>
+                                            </div>
+                                            <div class="product-item">
+                                                <a href="" class="header-child-title">Dành cho Nữ</a><br>
+                                                <a href="">Giày</a><br>
+                                                <a href="">Quần áo</a><br>
+                                                <a href="">Tất cả sản phẩm</a><br>
+                                            </div>
+                                            <div class="product-item">
+                                                <a href="" class="header-child-title">Dành cho Trẻ em</a><br>
+                                                <a href="">Giày</a><br>
+                                                <a href="">Quần áo</a><br>
+                                                <a href="">Tất cả sản phẩm</a><br>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="product">
+                            <div class="product">
+                                <a href="" class="product border-bottom">Nam </a>
+                                <div class="header-child-bottom">
+                                    <div class="header-child-bottom-product  display-none mot">
+                                        <div class="header-child">
+                                            <div class="product-item">
+                                                <a href="" class="header-child-title">Sản phẩm mới & nổi bậc</a><br>
+                                                <a href="">Tất cả hàng mới</a><br>
+                                                <a href="">Dòng Air Max tốt nhất</a><br>
+                                                <a href="">Sản phẩm ưu đãi cho thành viên vip</a><br>
+                                                <a href="">Bộ sưu tập Lunar New Year</a><br>
+                                                <a href="">Bộ sưa tập Galentine's Collection</a><br>
+                                                <a href="">Giảm giá 40%</a><br>
+                                            </div>
+                                            <div class="product-item">
+                                                <a href="" class="header-child-title">Giày</a><br>
+                                                <a href="">Lifestyle</a><br>
+                                                <a href="">Chạy bộ</a><br>
+                                                <a href="">Bóng rổ</a><br>
+                                                <a href="">Jordan</a><br>
+                                                <a href="">Training & Gym</a><br>
+                                                <a href="">Đá bóng</a><br>
+                                                <a href="">Golf</a><br>
+                                                <a href="">Trượt ván</a><br>
+                                                <a href="">Tenis</a><br>
+                                                <a href="">Bóng chày</a><br>
+                                                <a href="">Bóng đá</a><br>
+                                                <a href="">Walking</a><br>
+                                                <a href="">Tất cả giày</a><br>
+                                            </div>
+                                            <div class="product-item">
+                                                <a href="" class="header-child-title">Quần áo</a><br>
+                                                <a href="">Áo sơ mi</a><br>
+                                                <a href="">Áo phông</a><br>
+                                                <a href="">Quần Short</a><br>
+                                                <a href="">Hoodies</a><br>
+                                                <a href="">Áo nỉ</a><br>
+                                                <a href="">Quần và tất</a><br>
+                                                <a href="">Cả bộ</a><br>
+                                                <a href="">Áo khoác</a><br>
+                                                <a href="">Áo vest</a><br>
+                                                <a href="">Đồ bơi</a><br>
+                                                <a href="">Áo polo</a><br>
+                                                <a href="">Đồ lót</a><br>
+                                                <a href="">Yoga</a><br>
+                                                <a href="">Nike Pro</a><br>
+                                                <a href="">Tất</a><br>
+                                                <a href="">Tất cả quần aó</a><br>s
+                                            </div>
+                                            <div class="product-item">
+                                                <a href="" class="header-child-title">Bộ sưu tập</a><br>
+                                                <a href="">Golf</a><br>
+                                                <a href="">Jordan</a><br>
+                                                <a href="">Bóng đá</a><br>
+                                                <a href="">Chạy bộ</a><br>
+                                                <a href="">Nike Fleece</a><br>
+                                                <a href="">Bóng rổ</a><br>
+                                                <a href="">Tennis</a><br>
+                                                <a href="">NikeLap</a><br>
+                                                <a href="">Training & Gym</a><br>
+                                                <a href="">Bóng chày</a><br>
+                                                <a href="">Quần áo thể thao</a><br>
+                                                <a href="">ACG</a><br>
+                                                <a href="">Trượt ván</a><br>
+                                                <a href="">Nike FlyEase</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="product">
+                            <div class="product">
+                                <a href="" class="product border-bottom">Nữ</a>
+                                <div class="header-child-bottom">
+                                    <div class="header-child-bottom-product  display-none mot">
+                                        <div class="header-child">
+                                            <div class="product-item">
+                                                <a href="" class="header-child-title">Sản phẩm mới & nổi bậc</a><br>
+                                                <a href="">Tất cả hàng mới</a><br>
+                                                <a href="">Dòng Air Max tốt nhất</a><br>
+                                                <a href="">Sản phẩm ưu đãi cho thành viên vip</a><br>
+                                                <a href="">Bộ sưu tập Lunar New Year</a><br>
+                                                <a href="">Bộ sưa tập Galentine's Collection</a><br>
+                                                <a href="">Giảm giá 40%</a><br>
+                                            </div>
+                                            <div class="product-item">
+                                                <a href="" class="header-child-title">Giày</a><br>
+                                                <a href="">Lifestyle</a><br>
+                                                <a href="">Chạy bộ</a><br>
+                                                <a href="">Bóng rổ</a><br>
+                                                <a href="">Jordan</a><br>
+                                                <a href="">Training & Gym</a><br>
+                                                <a href="">Đá bóng</a><br>
+                                                <a href="">Golf</a><br>
+                                                <a href="">Trượt ván</a><br>
+                                                <a href="">Tenis</a><br>
+                                                <a href="">Bóng chày</a><br>
+                                                <a href="">Bóng đá</a><br>
+                                                <a href="">Walking</a><br>
+                                                <a href="">Tất cả giày</a><br>
+                                            </div>
+                                            <div class="product-item">
+                                                <a href="" class="header-child-title">Quần áo</a><br>
+                                                <a href="">Áo sơ mi</a><br>
+                                                <a href="">Áo phông</a><br>
+                                                <a href="">Quần Short</a><br>
+                                                <a href="">Hoodies</a><br>
+                                                <a href="">Áo nỉ</a><br>
+                                                <a href="">Quần và tất</a><br>
+                                                <a href="">Cả bộ</a><br>
+                                                <a href="">Áo khoác</a><br>
+                                                <a href="">Áo vest</a><br>
+                                                <a href="">Đồ bơi</a><br>
+                                                <a href="">Áo polo</a><br>
+                                                <a href="">Đồ lót</a><br>
+                                                <a href="">Yoga</a><br>
+                                                <a href="">Nike Pro</a><br>
+                                                <a href="">Tất</a><br>
+                                                <a href="">Tất cả quần áo</a><br>
+                                            </div>
+                                            <div class="product-item">
+                                                <a href="" class="header-child-title">Bộ sưu tập</a><br>
+                                                <a href="">Golf</a><br>
+                                                <a href="">Jordan</a><br>
+                                                <a href="">Bóng đá</a><br>
+                                                <a href="">Chạy bộ</a><br>
+                                                <a href="">Nike Fleece</a><br>
+                                                <a href="">Bóng rổ</a><br>
+                                                <a href="">Tennis</a><br>
+                                                <a href="">NikeLap</a><br>
+                                                <a href="">Training & Gym</a><br>
+                                                <a href="">Bóng chày</a><br>
+                                                <a href="">Quần áo thể thao</a><br>
+                                                <a href="">ACG</a><br>
+                                                <a href="">Trượt ván</a><br>
+                                                <a href="">Nike FlyEase</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="product">
+                            <div class="product">
+                                <a href="" class="product border-bottom">Trẻ em</a>
+                                <div class="header-child-bottom">
+                                    <div class="header-child-bottom-product  display-none mot">
+                                        <div class="header-child">
+                                            <div class="product-item">
+                                                <a href="" class="header-child-title">Sản phẩm mới & nổi bậc</a><br>
+                                                <a href="">Tất cả hàng mới</a><br>
+                                                <a href="">Dòng Air Max tốt nhất</a><br>
+                                                <a href="">Sản phẩm ưu đãi cho thành viên vip</a><br>
+                                                <a href="">Bộ sưu tập Lunar New Year</a><br>
+                                                <a href="">Bộ sưa tập Galentine's Collection</a><br>
+                                                <a href="">Giảm giá 40%</a><br>
+                                            </div>
+                                            <div class="product-item">
+                                                <a href="" class="header-child-title">Giày cho bé trai</a><br>
+                                                <a href="">Trẻ lớn</a><br>
+                                                <a href="">Trẻ nhỏ  </a><br>
+                                                <a href="">Trẻ sơ sinh - mới biết đi</a><br>
+                                                <a href="">Lifestyle</a><br>
+                                                <a href="">Chạy bộ</a><br>
+                                                <a href="">Đá bóng</a><br>
+                                                <a href="">Bóng rổ</a><br>
+                                                <a href="">Trượt ván</a><br>
+                                                <a href="">Tenis</a><br>
+                                                <a href="">Bóng chày</a><br>
+                                                <a href="">Bóng đá</a><br>
+                                                <a href="">Walking</a><br>
+                                                <a href="">Tất cả giày</a><br>
+                                            </div>
+                                            <div class="product-item">
+                                                <a href="" class="header-child-title">Giày cho bé gái</a><br>
+                                                <a href="">Trẻ lớn</a><br>
+                                                <a href="">Trẻ nhỏ  </a><br>
+                                                <a href="">Trẻ sơ sinh - mới biết đi</a><br>
+                                                <a href="">Lifestyle</a><br>
+                                                <a href="">Chạy bộ</a><br>
+                                                <a href="">Đá bóng</a><br>
+                                                <a href="">Bóng rổ</a><br>
+                                                <a href="">Trượt ván</a><br>
+                                                <a href="">Tenis</a><br>
+                                                <a href="">Bóng chày</a><br>
+                                                <a href="">Bóng đá</a><br>
+                                                <a href="">Walking</a><br>
+                                                <a href="">Tất cả giày</a><br>
+                                            </div>
+                                            <div class="product-item">
+                                                <a href="" class="header-child-title">Quần áo</a><br>
+                                                <a href="">Quần áo cho bé trai lớn</a><br>
+                                                <a href="">Quần áo cho bé trai nhỏ</a><br>
+                                                <a href="">Quần áo cho bé gái lớn</a><br>
+                                                <a href="">Quần áo cho bé gái nhỏ</a><br>
+                                                <a href="">Nike Fleece</a><br>
+                                                <a href="">Bóng rổ</a><br>
+                                                <a href="">Tennis</a><br>
+                                                <a href="">NikeLap</a><br>
+                                                <a href="">Training & Gym</a><br>
+                                                <a href="">Bóng chày</a><br>
+                                                <a href="">Quần áo thể thao</a><br>
+                                                <a href="">ACG</a><br>
+                                                <a href="">Trượt ván</a><br>
+                                                <a href="">Nike FlyEase</a>
+                                                <a href="">Tất cả quần áo</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="product">
+                            <div class="product">
+                                <a href="" class="product border-bottom">Giảm giá</a>
+                                <div class="header-child-bottom">
+                                    <div class="header-child-bottom-product  display-none header-child-bottom-sale">
+                                        <div class="header-child">
+                                            <div class="product-item product-plus">
+                                                <a href="" class="header-child-title">Giảm giá</a><br>
+                                                <a href="">Giảm giá 40%</a><br>
+                                            </div>
+                                            <div class="product-item">
+                                                <a href="" class="header-child-title">Nam</a><br>
+                                                <a href="">Giày</a><br>
+                                                <a href="">Quần áo</a><br>
+                                                <a href="">Phụ kiện</a><br>
+                                            </div>
+                                            <div class="product-item">
+                                                <a href="" class="header-child-title">Nữ</a><br>
+                                                <a href="">Giày</a><br>
+                                                <a href="">Quần áo</a><br>
+                                                <a href="">Phụ kiện</a><br>
+                                            </div>
+                                            <div class="product-item">
+                                                <a href="" class="header-child-title">Trẻ em</a><br>
+                                                <a href="">Giày</a><br>
+                                                <a href="">Quần áo</a><br>
+                                                <a href="">Phụ kiện</a><br>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
                 </div>
+                <div class="header-right">
+                    <i class='fa fa-heart-o'></i>
+                    <div class="shopping-bag"><i class="gg-shopping-bag"></i></div>
+                </div>
             </div>
-        </header>
-        <!-- Đây là phần Landing thứ nhất -->
-        <div class="landing-item1">
-            <div class="landing-item1-img">
-                <img src="./img/giay nike remove.png" alt="">
+            <div class="header-child-bottom">
+                <div class="header-child-bottom-men header-child display-none"></div>
             </div>
-            <div class="landing-item1-infor">
-                <div class="title">
-                    <h2>Nike Air Force One 7 Color Sadow</h2>
-                    <!-- Price là giá tiền của sản phẩm new được gọi chung là giá mới sau giảm old là giá cũ -->
-                    <div class="price">
-                        <div class="new">
-                            <p>249.000đ</p>
-                        </div>
-                        <div class="old">
-                            <p>400.000đ</p>
-                        </div>
+            <div class="header-child-bottom">
+                <div class="header-child-bottom-woman header-child display-none"></div>
+            </div>
+            <div class="header-child-bottom">
+                <div class="header-child-bottom-kids header-child display-none"></div>
+            </div>
+            <div class="header-child-bottom">
+                <div class="header-child-bottom-sale header-child display-none"></div>
+            </div>
+    </div>
+    </header>
+    <!-- Đây là phần Landing thứ nhất -->
+    <div class="landing-item1">
+        <div class="landing-item1-img">
+            <img src="./img/giay nike remove.png" alt="">
+        </div>
+        <div class="landing-item1-infor">
+            <div class="title">
+                <h2>Nike Air Force One 7 Color Sadow</h2>
+                <!-- Price là giá tiền của sản phẩm new được gọi chung là giá mới sau giảm old là giá cũ -->
+                <div class="price">
+                    <div class="new">
+                        <p>249.000đ</p>
                     </div>
-                    <!-- Border là div trống để có thể thêm được khung vào -->
-                    <div class="border"></div>
-                    <!-- description là phần mô tả của sản phẩm. -->
-                    <div class="description">
-                        <p>Thiết kế trẻ trung năng động. Màu sắc bắt mắt , thời thượng. Phù hợp với nhiều phong cách thời trang. Đi chơi, đi làm, đi học đều mang được...</p>
+                    <div class="old">
+                        <p>400.000đ</p>
                     </div>
-                    <div class="button">
-                        <!-- buton-description là nút xem thêm -->
-                        <div class="button-descriotion">
-                            <button><a href="">XEM THÊM</a></button>
-                        </div>
-                        <!-- button-buy là nút mua -->
-                        <div class="button-buy">
-                            <button><a href="">MUA NGAY</a></button>
-                        </div>
+                </div>
+                <!-- Border là div trống để có thể thêm được khung vào -->
+                <div class="border"></div>
+                <!-- description là phần mô tả của sản phẩm. -->
+                <div class="description">
+                    <p>Thiết kế trẻ trung năng động. Màu sắc bắt mắt , thời thượng. Phù hợp với nhiều phong cách thời trang. Đi chơi, đi làm, đi học đều mang được...</p>
+                </div>
+                <div class="button">
+                    <!-- buton-description là nút xem thêm -->
+                    <div class="button-descriotion">
+                        <button><a href="">XEM THÊM</a></button>
+                    </div>
+                    <!-- button-buy là nút mua -->
+                    <div class="button-buy">
+                        <button><a href="">MUA NGAY</a></button>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Đây là phần Landing thứ 2 -->
-        <div class="landing-item2">
-            <div class="title ">
-                <div class="landing-item2-title">
-                    <h2>Hàng Nhập Khẩu <br> Làm Từ DA Và COTTON CHẤT LƯỢNG CAO</h2>
-                    <div class="border"></div>
-                    <div class="description">
-                        <p>Với phong cách thời trang thời thượng, cá tính...</p>
-                    </div>
-                </div>
-                <div class="landing-item2-img">
-                    <img src="./img/giay adidas remove.png" alt="">
+    </div>
+    <!-- Đây là phần Landing thứ 2 -->
+    <div class="landing-item2">
+        <div class="title ">
+            <div class="landing-item2-title">
+                <h2>Hàng Nhập Khẩu <br> Làm Từ DA Và COTTON CHẤT LƯỢNG CAO</h2>
+                <div class="border"></div>
+                <div class="description">
+                    <p>Với phong cách thời trang thời thượng, cá tính...</p>
                 </div>
             </div>
-        </div>
-        <!-- Đây là phần Landing thứ 3 -->
-        <div class="landing-item3">
-            <div class="title ">
-                <div class="landing-item3-title">
-                    <h2>Thông tin bổ sung</h2>
-                    <div class="border"></div>
-                    <div class="description">
-                        <p>Với phong cách thời trang thời thượng, cá tính...</p>
-                    </div>
-                </div>
-                <div class="landing-item3-img">
-                    <img src="./img/nguoi mau nike remove.png" alt="">
-                </div>
+            <div class="landing-item2-img">
+                <img src="./img/giay adidas remove.png" alt="">
             </div>
         </div>
+    </div>
+    <!-- Đây là phần Landing thứ 3 -->
+    <div class="landing-item3">
+        <div class="title ">
+            <div class="landing-item3-title">
+                <h2>Thông tin bổ sung</h2>
+                <div class="border"></div>
+                <div class="description">
+                    <p>Với phong cách thời trang thời thượng, cá tính...</p>
+                </div>
+            </div>
+            <div class="landing-item3-img">
+                <img src="./img/nguoi mau nike remove.png" alt="">
+            </div>
+        </div>
+    </div>
     </div>
     <!-- Kết thúc Landing page -->
     <!-- Phần sản phẩm -->
@@ -395,6 +725,8 @@
             </div>
         </div>
     </footer>
+
 </body>
+
 
 </html>
