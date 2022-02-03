@@ -1,0 +1,883 @@
+/* Đây là phần css cơ bản */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+p,
+a,
+h1,
+h2,
+h3,
+li {
+    font-family: 'tamoha';
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    font-weight: 550;
+}
+
+@font-face {
+    src: url(/font/Nike-Font/Nike-Font/Futura\ Condensed\ Extra\ Bold.otf);
+    font-family: 'NikeFont';
+    src: url(/font/tamoha_font/Tahoma\ Regular\ font.ttf);
+    font-family: "tamoha";
+}
+
+
+/* Kết thúc css cơ bản   */
+
+
+/* css header */
+
+.landing {
+    background-color: #f6f6f6;
+}
+
+
+/* Header phụ */
+
+.header-child-top {
+    position: fixed;
+    background-color: white;
+    height: 8vh;
+    display: flex;
+    z-index: 4;
+    width: 100vw;
+}
+
+
+/* header input */
+
+.header-child-top input {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 30px;
+    border-radius: 45px;
+    border: 0px;
+    background-color: #ebe9e9;
+    padding: 10px 60px 10px 60px;
+    position: relative;
+    opacity: 100%;
+}
+
+.header-child-top input:hover {
+    background-color: #c7c6c6;
+    opacity: 100%;
+}
+
+.header-child-top input:target {
+    border: 0px;
+}
+
+.header-child-top i {
+    position: absolute;
+    top: 19px;
+    left: 49px;
+}
+
+
+/* header help */
+
+.header-child-top .header-child-right {
+    display: flex;
+    position: absolute;
+    right: 60px;
+    top: 20px;
+}
+
+.header-child-help-child a {
+    padding-left: 25px;
+    padding-top: 0px;
+    font-weight: 600;
+    display: block;
+    box-sizing: border-box;
+    margin-left: 16px;
+    color: gray;
+}
+
+.header-child-top a {
+    padding-left: 15px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.header-child-top .border-right {
+    border-right: 1px solid black;
+    padding-left: 15px;
+}
+
+.header-child-help-child {
+    position: absolute;
+    width: 13vw;
+    height: 52vh;
+    background-color: white;
+    top: 20px;
+    right: 125px;
+    display: none;
+    z-index: 20;
+}
+
+.header-child-help-child a.help-bold {
+    font-size: 14px;
+    font-weight: 500;
+    padding-top: 30px;
+    padding-left: 20px;
+    margin-left: 12px;
+    color: #000;
+}
+
+.header-child-help:hover .header-child-help-child {
+    display: block;
+    z-index: 20;
+}
+
+.header-child-help a:hover {
+    opacity: 80%;
+}
+
+
+/* Header chính  */
+
+header {
+    position: fixed;
+    width: 100vw;
+    z-index: 2;
+    margin-top: 8vh;
+}
+
+.landing .header {
+    height: 60px;
+    display: flex;
+    background-color: white;
+    position: relative;
+}
+
+.landing .header-left img {
+    width: 50px;
+    padding-left: 4vw;
+    padding-top: 4px;
+}
+
+.landing .header-mid {
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100vw;
+}
+
+.landing .header-mid a {
+    font-weight: 500;
+    font-size: 17px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.landing .header-mid ul {
+    float: center;
+    text-align: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 28vw;
+}
+
+.landing .header-mid li {
+    float: left;
+    margin-left: 3vw;
+    margin-top: 19px;
+}
+
+.header-child {
+    width: 100vw;
+    height: auto;
+    background-color: white;
+    display: flex;
+    padding-left: 14vw;
+    padding-top: 16px;
+    margin-top: 20px;
+    padding-bottom: 50px;
+    text-align: left;
+}
+
+.header-child a {
+    color: black;
+    opacity: 50%;
+    line-height: 2;
+    font-size: 14px;
+}
+
+a.header-child-title {
+    color: black;
+    opacity: 100%;
+    font-size: 15px;
+}
+
+.product-item {
+    padding-left: 50px;
+}
+
+.header-child-bottom-men,
+.header-child-bottom-woman,
+.header-child-bottom-kids,
+.header-child-bottom-sale {
+    display: none;
+}
+
+.header-child-bottom-product {
+    display: none;
+    position: fixed;
+    left: 0;
+}
+
+.product-plus {
+    padding-left: 17vw;
+}
+
+
+/* hover */
+
+.product:hover .header-child-bottom-product {
+    display: block;
+    transition: 0.4s;
+}
+
+.header-mid a:hover {
+    padding-bottom: 16px;
+    border-bottom: 3px black solid;
+    width: 100%;
+}
+
+.header-mid .product a:hover . {
+    display: block;
+}
+
+.header-mid a.header-child-title:hover {
+    opacity: 100%;
+    font-size: 17.5px;
+}
+
+.header-child-bottom a:hover {
+    border-bottom: 0px;
+    opacity: 80%;
+}
+
+i.fa {
+    font-size: 22px;
+    padding: 9px 9px 9px 9px;
+    font-weight: bold;
+}
+
+.shopping-bag {
+    margin-left: 60px;
+    font-weight: bold;
+    padding: 9px 9px 9px 9px;
+}
+
+.header-right {
+    display: flex;
+    float: right;
+    position: absolute;
+    right: 80px;
+    top: 8px;
+}
+
+.header-right i.fa:hover {
+    background-color: #c7c6c6;
+    border-radius: 50%;
+}
+
+.header-right .shopping-bag:hover {
+    background-color: #c7c6c6;
+    border-radius: 50%;
+}
+
+
+/* ads */
+
+.header-ads-title {
+    padding-top: 120px;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+    padding-left: 29vw;
+    background-color: #f6f6f6;
+    border-bottom: 1px rgba(134, 134, 134, 0.664) solid;
+}
+
+.header-ads-title button {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px;
+    padding: 0px 60px 0px 60px;
+    cursor: pointer;
+    display: block;
+}
+
+.header-ads-title a {
+    padding: 5px 0px 5px 0px;
+    font-size: 15px;
+}
+
+.header-ads-title a.description {
+    padding-left: 15px;
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+
+/* product all */
+
+.product-all {
+    display: block;
+    padding-top: 50px;
+    padding-left: 40px;
+    display: flex;
+}
+
+.product-all .product-option-img {
+    position: absolute;
+    right: 238px;
+    top: 360px;
+}
+
+.product-all .product-option-img img {
+    width: 69px;
+    height: auto;
+    padding-left: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/*  */
+
+.product-all .true {
+    border: 1px black solid;
+}
+
+.product-all .product-option-img img:hover {
+    border: 1px black solid;
+}
+
+
+/*  */
+
+.product-all .product-img {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(449px + 449px);
+}
+
+.product-all .product-img img {
+    width: 434px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    position: unset;
+    cursor: pointer;
+}
+
+.product-all .product-item {
+    padding-left: 80px;
+}
+
+.product-description a {
+    color: red;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.product-title a {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.007em;
+}
+
+.product-tag a,
+.product-tag {
+    padding-bottom: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.product-price a {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.product-price {
+    padding-top: 12px;
+    padding-bottom: 12px
+}
+
+.product-select-size {
+    padding-top: 100px;
+}
+
+.product-select-size .option-size {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 8px;
+    max-width: 365px;
+}
+
+.product-select-size button {
+    width: 68px;
+    height: 48px;
+    border: 1px solid rgba(134, 134, 134, 0.5);
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+    color: rgb(17, 17, 17);
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.product-all .product-button-all {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.product-all .product-button-all .button-add-to-bag button {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.product-all .product-button-all .button-add-to-bag button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.product-all .product-button-all .button-add-to-favorite button {
+    cursor: pointer;
+}
+
+.product-all .product-button-all .button-add-to-favorite button:hover {
+    border: 1.5px solid black;
+}
+
+.product-all .product-button button {
+    width: 360px;
+    height: 60px;
+    border: 1.5px solid rgba(0, 0, 0, 0.5);
+    background-color: white;
+    margin-bottom: 12px;
+    border-radius: 30px;
+    font-size: 16px;
+    color: black;
+}
+
+.product-all .product-select-size .option-size button:hover {
+    border: 1.5px solid black;
+}
+
+.product-all .product-description-details {
+    max-width: 360px;
+}
+
+.product-all .product-description-details a {
+    cursor: text;
+    line-height: 1.75;
+    font-size: 15.5px;
+}
+
+.product-all .product-description-details a.details-child {
+    color: #757575;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.product-all .product-description-details a.details {
+    display: block;
+    margin-bottom: 40px;
+}
+
+.product-all .product-description-details ul li {
+    list-style: disc;
+    margin-left: 15px;
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+.product-all .product-description-details a.view-details {
+    font-size: 16px;
+    text-decoration: underline;
+    line-height: 1.75;
+    padding-bottom: 40px;
+    padding-top: 30px;
+    display: block;
+}
+
+.product-all .product-option {
+    padding: 28px 0;
+    border-top: 1.0px solid rgba(68, 68, 68, 0.3);
+    display: flex;
+    position: relative;
+}
+
+.product-all .product-rate {
+    border-bottom: 1.0px solid rgba(68, 68, 68, 0.3);
+}
+
+.product-all .product-option a {
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 500;
+}
+
+.product-all .product-option i {
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+
+.product-all .product-option .star {
+    padding-top: 5px;
+    padding-left: 180px;
+}
+
+.product-all .product-option .fa-star {
+    color: rgba(68, 68, 68, 0.3);
+}
+
+.product-all .product-option .checked {
+    color: black;
+}
+
+
+/* click */
+
+.product-all .product-option .icon-down:active {
+    transform: 90deg;
+}
+
+
+/* end hover */
+
+
+/* recommand set */
+
+.recommand-set {
+    padding-bottom: 150px;
+}
+
+.recommand-set-all {
+    display: flex;
+    padding-left: 55px;
+    padding-right: 55px;
+}
+
+.recommand-set-child {
+    padding-right: 20px;
+}
+
+.recommand-set .recommand-set-img,
+.recommand-set .recommand-set-child img {
+    width: calc(25vw + 70px);
+    height: 540px;
+    position: relative;
+}
+
+.recommand-set-tag {
+    width: calc(25vw + 70px);
+    height: 540px;
+    display: none;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.recommand-set-tag a.price {
+    padding-top: 20px;
+    color: white;
+}
+
+.recommand-set .recommand-set-tag .item {
+    background-color: black;
+    width: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 140px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.recommand-set .recommand-set-tag .item a {
+    color: rgba(255, 255, 255, 0.5);
+    display: block;
+}
+
+.recommand-set-tag .shirt {
+    top: 130px;
+}
+
+.recommand-set-tag .hoodie {
+    top: 80px;
+    right: 65px;
+}
+
+.recommand-set-tag .bra {
+    right: 0px;
+    top: 220px;
+}
+
+.recommand-set-tag .trousers {
+    right: 130px;
+    top: 289px;
+}
+
+.recommand-set-tag .hat {
+    top: 360px;
+}
+
+
+/* hover */
+
+.recommand-set .recommand-set-img:hover .recommand-set-tag {
+    display: block;
+}
+
+
+/*  */
+
+.banner-product p {
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+    display: block;
+    padding-top: 60px;
+}
+
+.banner-product-title {
+    padding-bottom: 130px;
+    display: block;
+}
+
+.banner-product-item {
+    padding-bottom: 120px;
+}
+
+.banner-product img {
+    width: 1368px;
+    padding-left: 55px;
+}
+
+
+/* hot product - sản phẩm liên quan*/
+
+.hot-product-title h2 {
+    margin-top: 40px;
+    padding-left: 40px;
+    font-weight: 600;
+}
+
+.hot-product {
+    display: flex;
+    background-color: white;
+    overflow: auto;
+}
+
+.hot-product .product-img img {
+    cursor: pointer;
+}
+
+
+/* Chỉnh sửa phần thanh trượt */
+
+.hot-product::after,
+.hot-product::before {
+    box-sizing: inherit;
+}
+
+.hot-product::-webkit-scrollbar {
+    width: 14px;
+}
+
+.hot-product::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+    display: none;
+}
+
+.hot-product::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+
+.hot-product::-webkit-scrollbar-track {
+    margin: 0 var(--carousel-padding);
+}
+
+.hot-product::-webkit-scrollbar-thumb {
+    background-clip: content-box;
+    border: solid transparent;
+    border-width: 4px 0;
+    border-radius: 7px;
+    box-shadow: inset 0 0 0 10px;
+    border-top-color: transparent;
+    border-top-style: solid;
+    border-top-width: 4px;
+    border-right-color: transparent;
+    border-right-style: solid;
+    border-right-width: 0px;
+    border-bottom-color: transparent;
+    border-bottom-style: solid;
+    border-bottom-width: 4px;
+    border-left-color: transparent;
+    border-left-style: solid;
+    border-left-width: 0px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+}
+
+
+/* Kết thúc phần thanh trượt */
+
+.hot-product .product {
+    padding-left: 40px;
+    padding-bottom: 30px;
+}
+
+.product-infor {
+    display: flex;
+    position: relative;
+    width: 452px;
+}
+
+.product-title a {
+    font-size: 16px;
+}
+
+.product-description a {
+    font-weight: 400;
+    opacity: 50%;
+    color: black;
+}
+
+.product-price a {
+    font-weight: 500;
+}
+
+.product-price {
+    position: absolute;
+    right: 0;
+}
+
+.product-img img {
+    padding-bottom: 20px;
+    padding-top: 30px;
+    width: 452px;
+}
+
+
+/* footer */
+
+footer {
+    background-color: black;
+    padding-left: 40px;
+    padding-top: 40px;
+    margin-top: 10px;
+}
+
+footer a {
+    color: white;
+    display: block;
+    font-weight: 200;
+    opacity: 60%;
+    font-size: 14px;
+    line-height: 2.3;
+}
+
+.footer-left {
+    display: flex;
+}
+
+.item-bold a {
+    font-weight: 700;
+    opacity: 100%;
+    font-size: 16px;
+    line-height: 2;
+}
+
+.footer-item,
+.footer-help,
+.footer-about {
+    margin-right: 10vw;
+}
+
+.footer {
+    padding-bottom: 70px;
+    position: relative;
+}
+
+.footer-description {
+    display: flex;
+}
+
+.footer-description a {
+    margin-bottom: 20px;
+}
+
+.gg-copyright {
+    color: white;
+    margin-left: 20px;
+    margin-right: 4px;
+}
+
+.footer-right {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-right: 60px;
+}
+
+.footer-right li {
+    padding-left: 80px;
+}
+
+.footer-right i {}
+
+.footer-description-left {
+    display: flex;
+}
+
+.footer-description-left a {
+    font-size: 13px;
+}
+
+.footer-description-left i {
+    vertical-align: text-bottom;
+}
+
+.footer-description-right {
+    display: flex;
+    padding-right: 60px;
+    position: absolute;
+    right: 0;
+}
+
+.footer-description-right a {
+    padding-left: 20px;
+    font-size: 13px;
+}
